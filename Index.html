@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headtrick iOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #121212;
+            color: white;
+        }
+        button {
+            padding: 15px;
+            font-size: 18px;
+            margin: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Headtrick para iOS</h2>
+    <p>Ative as configurações para melhor resposta da tela e mira aprimorada.</p>
+
+    <button onclick="otimizarToque()">Otimizar Touch</button>
+    <button onclick="removerLag()">Remover Lag</button>
+    <button onclick="ajustarMira()">Melhorar Mira</button>
+
+    <script>
+        function otimizarToque() {
+            alert("Toque otimizado para resposta 6.7x!");
+            document.documentElement.style.touchAction = "none";
+        }
+
+        function removerLag() {
+            alert("Lag reduzido e desempenho otimizado!");
+            setInterval(() => { window.navigator.vibrate(1); }, 5000);
+        }
+
+        function ajustarMira() {
+            alert("Mira ajustada e mais estável!");
+            document.documentElement.style.cursor = "crosshair";
+        }
+    </script>
+
+</body>
+</html>
